@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAa-UF-TLD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAa-UF-TLD">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celula-aluno" rowHeight="85" id="4uR-YV-UME" customClass="HomeTableViewCell" customModule="Agenda" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4uR-YV-UME" id="Cvy-MG-lis">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
@@ -40,6 +41,7 @@
                                 <connections>
                                     <outlet property="imageAluno" destination="I1a-iL-YQH" id="dM3-yt-b69"/>
                                     <outlet property="labelNomeDoAluno" destination="oKL-i4-VS5" id="GFr-bb-rep"/>
+                                    <segue destination="ZY7-NM-Hup" kind="show" identifier="editar" id="6gs-jX-j7p"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,7 +52,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Agenda" id="aoB-Jw-lAm">
                         <barButtonItem key="backBarButtonItem" title=" " id="M57-Hv-I3X"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="dzi-1s-s3a"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="dzi-1s-s3a">
+                            <connections>
+                                <action selector="buttonCalculaMedia:" destination="Qhi-kM-lyB" id="KbE-UI-rNB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4cp-jd-Mnv">
                             <connections>
                                 <segue destination="ZY7-NM-Hup" kind="show" id="tio-sZ-JlU"/>
@@ -228,6 +234,7 @@
                             <constraint firstItem="kjd-vi-ppJ" firstAttribute="leading" secondItem="nVT-S7-kWk" secondAttribute="leading" constant="16" id="tnp-nO-LJA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kPP-8O-Qxn"/>
                     <connections>
                         <outlet property="buttonFoto" destination="X6G-KS-zIE" id="TSZ-IB-8Ah"/>
                         <outlet property="imageAluno" destination="EeF-Ef-j6E" id="0lP-oI-Din"/>
@@ -243,6 +250,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eia-sQ-Gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1189.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="coN-fH-VQG">
+            <objects>
+                <viewController storyboardIdentifier="mapa" id="8p3-Qs-UWy" customClass="MapaViewController" customModule="Agenda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gSt-Ui-vN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QjT-fF-6SM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UuR-H8-0Q2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QjT-fF-6SM" firstAttribute="leading" secondItem="UuR-H8-0Q2" secondAttribute="leading" id="1cj-JX-3eA"/>
+                            <constraint firstItem="QjT-fF-6SM" firstAttribute="bottom" secondItem="UuR-H8-0Q2" secondAttribute="bottom" id="RoH-nc-qN5"/>
+                            <constraint firstItem="QjT-fF-6SM" firstAttribute="trailing" secondItem="UuR-H8-0Q2" secondAttribute="trailing" id="b9d-az-HTV"/>
+                            <constraint firstItem="QjT-fF-6SM" firstAttribute="top" secondItem="UuR-H8-0Q2" secondAttribute="top" id="w7y-aC-p9x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapa" destination="QjT-fF-6SM" id="NIh-b0-BFa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuI-lB-O9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yXs-rW-FGy">
@@ -261,4 +297,12 @@
             <point key="canvasLocation" x="-519" y="116"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6gs-jX-j7p"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
