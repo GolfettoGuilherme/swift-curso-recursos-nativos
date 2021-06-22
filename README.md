@@ -42,6 +42,18 @@ O legal do mapa é que como funcionam com Latitude e Longitude, então foi neces
 
 da hora né
 
+### Abrindo um site via Safari
+
+No cadastro de aluno, existe o campo site né? então.
+
+Desenvolvemos uma opção no menu de contexto para abrir o site do aluno no Safari do iOS.
+
+mas não saindo do app, não
+
+usando o SafariServices para mostrar o site do aluno dentro do app.
+
+Top
+
 ## Autenticação Local
 
 Usar o FaceId, ou TouchID ou CodigoID para realizar uma ação somente pelo usuario do aparelho.
@@ -49,5 +61,16 @@ Usar o FaceId, ou TouchID ou CodigoID para realizar uma ação somente pelo usua
 usando o LocalAuthentication para isso, com closures. bem da hora
 
 
-### Relaxa, é uma obra em progresso ainda
+## Usando o 3D Touch para fazer atalhos no aplicativo
 
+Setando no Info.plist duas chavinhas para configurar os atalhos via 3D
+
+Depois atribuindo o clique do atalho a uma View do aplicativo
+
+
+## Icone
+
+Por fim, aprendemos a definir um icone bonito para a aplicação para não ficar naquele genérico da apple.
+
+é nois
+Fechou Balada

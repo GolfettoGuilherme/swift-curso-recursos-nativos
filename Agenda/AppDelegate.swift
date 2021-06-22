@@ -11,6 +11,10 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    enum TipoDeShortcu: String {
+        case cadastrarAluno = "CadastrarAluno"
+    }
 
     var window: UIWindow?
 
@@ -43,6 +47,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        if let tipo = TipoDeShortcu(rawValue: shortcutItem.type){
+            switch tipo {
+            case .cadastrarAluno:
+                
+                //cria em memoria a tela que vamos abrir
+                let cadastrarAluno = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "cadastrar")
+                
+                //busca a instancia do navigationController da aplicação
+                let navigation = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
+                
+                navigation?.pushViewController(cadastrarAluno, animated: true)
+                
+                break
+                
+            
+            }
+        }
+    }
+    
+    
 
     // MARK: - Core Data stack
 
