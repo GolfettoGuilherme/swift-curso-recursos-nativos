@@ -15,6 +15,10 @@
 		03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */; };
 		03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */; };
 		03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */; };
+		0E32DC0E2694D9EB00397588 /* LigacaoTelefonica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32DC0D2694D9EB00397588 /* LigacaoTelefonica.swift */; };
+		0E32DC102694DB1900397588 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32DC0F2694DB1900397588 /* Safari.swift */; };
+		0E32DC122694DC0E00397588 /* Filtro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32DC112694DC0E00397588 /* Filtro.swift */; };
+		0E355CC62684191300BA30B7 /* AlunoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E355CC52684191300BA30B7 /* AlunoApi.swift */; };
 		0E96E8B0266ABB3800872019 /* MenuOpcoesAlunos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96E8AF266ABB3800872019 /* MenuOpcoesAlunos.swift */; };
 		0E96E8B2266AC08600872019 /* Mensagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96E8B1266AC08600872019 /* Mensagem.swift */; };
 		0E96E8B4266EFF5A00872019 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96E8B3266EFF5A00872019 /* Localizacao.swift */; };
@@ -25,6 +29,10 @@
 		0E96E8C22671A19000872019 /* Pino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96E8C12671A19000872019 /* Pino.swift */; };
 		0E96E8C52671A56400872019 /* icon_caelum.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E96E8C42671A56400872019 /* icon_caelum.png */; };
 		0E9C6CB62630BC1A002BD516 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9C6CB52630BC1A002BD516 /* ImagePicker.swift */; };
+		0EAD8AF5269527EB000E283B /* Configuracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD8AF4269527EB000E283B /* Configuracao.swift */; };
+		0EE5AD5626842DE700192B92 /* Repositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5AD5526842DE700192B92 /* Repositorio.swift */; };
+		0EE5AD5826842EE200192B92 /* AlunoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5AD5726842EE200192B92 /* AlunoDAO.swift */; };
+		E120974902FE5A4280ECCA57 /* Pods_Agenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD1BC2A386368748BDB7F8C /* Pods_Agenda.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,10 @@
 		03AA17651FC84353003CB2B8 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		03AA17671FC843B1003CB2B8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
+		0E32DC0D2694D9EB00397588 /* LigacaoTelefonica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigacaoTelefonica.swift; sourceTree = "<group>"; };
+		0E32DC0F2694DB1900397588 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
+		0E32DC112694DC0E00397588 /* Filtro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtro.swift; sourceTree = "<group>"; };
+		0E355CC52684191300BA30B7 /* AlunoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoApi.swift; sourceTree = "<group>"; };
 		0E96E8AF266ABB3800872019 /* MenuOpcoesAlunos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpcoesAlunos.swift; sourceTree = "<group>"; };
 		0E96E8B1266AC08600872019 /* Mensagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensagem.swift; sourceTree = "<group>"; };
 		0E96E8B3266EFF5A00872019 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
@@ -48,7 +60,13 @@
 		0E96E8C12671A19000872019 /* Pino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pino.swift; sourceTree = "<group>"; };
 		0E96E8C42671A56400872019 /* icon_caelum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_caelum.png; sourceTree = "<group>"; };
 		0E9C6CB52630BC1A002BD516 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0EAD8AF4269527EB000E283B /* Configuracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracao.swift; sourceTree = "<group>"; };
 		0ED82FE42630D41800EE601C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0EE5AD5526842DE700192B92 /* Repositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositorio.swift; sourceTree = "<group>"; };
+		0EE5AD5726842EE200192B92 /* AlunoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoDAO.swift; sourceTree = "<group>"; };
+		2AD1BC2A386368748BDB7F8C /* Pods_Agenda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7CACBD7848F6173C9B43D6 /* Pods-Agenda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda.debug.xcconfig"; path = "Target Support Files/Pods-Agenda/Pods-Agenda.debug.xcconfig"; sourceTree = "<group>"; };
+		E8D3C8B0438A77EA47D2DC03 /* Pods-Agenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda.release.xcconfig"; path = "Target Support Files/Pods-Agenda/Pods-Agenda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +74,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E120974902FE5A4280ECCA57 /* Pods_Agenda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021CEA7DF8BE00057428EB53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AD1BC2A386368748BDB7F8C /* Pods_Agenda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03AA17411FC84154003CB2B8 = {
 			isa = PBXGroup;
 			children = (
 				0ED82FE42630D41800EE601C /* README.md */,
 				03AA174C1FC84154003CB2B8 /* Agenda */,
 				03AA174B1FC84154003CB2B8 /* Products */,
+				2E37924F6B464312EADFDD5B /* Pods */,
+				021CEA7DF8BE00057428EB53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +155,7 @@
 		03AA17691FC84A2D003CB2B8 /* Alunos */ = {
 			isa = PBXGroup;
 			children = (
+				0E355CC42684190400BA30B7 /* Model */,
 				03AA176B1FC84A2D003CB2B8 /* View */,
 				03AA176A1FC84A2D003CB2B8 /* Controller */,
 			);
@@ -145,6 +175,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0E355CC42684190400BA30B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E355CC52684191300BA30B7 /* AlunoApi.swift */,
+				0EE5AD5526842DE700192B92 /* Repositorio.swift */,
+				0EE5AD5726842EE200192B92 /* AlunoDAO.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0E96E8B5266F03F800872019 /* Mapa */ = {
@@ -197,8 +237,21 @@
 				0E96E8B3266EFF5A00872019 /* Localizacao.swift */,
 				0E96E8BC266F144A00872019 /* Notificacoes.swift */,
 				0E96E8BE26718E1E00872019 /* AutenticacaoLocal.swift */,
+				0E32DC0D2694D9EB00397588 /* LigacaoTelefonica.swift */,
+				0E32DC0F2694DB1900397588 /* Safari.swift */,
+				0E32DC112694DC0E00397588 /* Filtro.swift */,
+				0EAD8AF4269527EB000E283B /* Configuracao.swift */,
 			);
 			path = Componentes;
+			sourceTree = "<group>";
+		};
+		2E37924F6B464312EADFDD5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7CACBD7848F6173C9B43D6 /* Pods-Agenda.debug.xcconfig */,
+				E8D3C8B0438A77EA47D2DC03 /* Pods-Agenda.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03AA175F1FC84154003CB2B8 /* Build configuration list for PBXNativeTarget "Agenda" */;
 			buildPhases = (
+				4841F14A1E6D7EECB5B71BA5 /* [CP] Check Pods Manifest.lock */,
 				03AA17461FC84154003CB2B8 /* Sources */,
 				03AA17471FC84154003CB2B8 /* Frameworks */,
 				03AA17481FC84154003CB2B8 /* Resources */,
+				C930B11AC7082AC7A109DF02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +324,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4841F14A1E6D7EECB5B71BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Agenda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C930B11AC7082AC7A109DF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03AA17461FC84154003CB2B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,16 +375,23 @@
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
 				0E96E8C22671A19000872019 /* Pino.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
+				0E32DC122694DC0E00397588 /* Filtro.swift in Sources */,
+				0EE5AD5826842EE200192B92 /* AlunoDAO.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
 				0E9C6CB62630BC1A002BD516 /* ImagePicker.swift in Sources */,
 				0E96E8BB266F0DB400872019 /* CalculaMediaApi.swift in Sources */,
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
 				0E96E8B0266ABB3800872019 /* MenuOpcoesAlunos.swift in Sources */,
+				0E32DC102694DB1900397588 /* Safari.swift in Sources */,
+				0EAD8AF5269527EB000E283B /* Configuracao.swift in Sources */,
 				0E96E8B2266AC08600872019 /* Mensagem.swift in Sources */,
 				0E96E8BD266F144A00872019 /* Notificacoes.swift in Sources */,
 				0E96E8B8266F041C00872019 /* MapaViewController.swift in Sources */,
+				0E32DC0E2694D9EB00397588 /* LigacaoTelefonica.swift in Sources */,
+				0EE5AD5626842DE700192B92 /* Repositorio.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				0E96E8B4266EFF5A00872019 /* Localizacao.swift in Sources */,
+				0E355CC62684191300BA30B7 /* AlunoApi.swift in Sources */,
 				0E96E8BF26718E1F00872019 /* AutenticacaoLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +527,7 @@
 		};
 		03AA17601FC84154003CB2B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7CACBD7848F6173C9B43D6 /* Pods-Agenda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +543,7 @@
 		};
 		03AA17611FC84154003CB2B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D3C8B0438A77EA47D2DC03 /* Pods-Agenda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

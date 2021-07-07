@@ -8,41 +8,38 @@
 
 import UIKit
 
-enum MenuActionSheetAluno {
-    case sms
-    case ligacao
-    case waze
-    case mapa
-    case abrirPaginaWeb
-}
 
 class MenuOpcoesAlunos: NSObject {
     
-    func configuraMenuOpcoesDoAluno(completion: @escaping(_ opcao: MenuActionSheetAluno) -> Void) -> UIAlertController {
+    func configuraMenuOpcoesDoAluno(navigation: UINavigationController, alunoSelecionado: Aluno) -> UIAlertController {
         
         let menu = UIAlertController(title: "Atenção", message: "Escolha uma das opções abaixo", preferredStyle: .actionSheet)
         
+        guard let viewController = navigation.viewControllers.last else { return menu }
+        
         let sms = UIAlertAction(title: "Enviar SMS", style: .default) { acao in
-            completion(.sms)
+            Mensagem().enviaSMS(alunoSelecionado, controller: viewController)
         }
         
-        let cancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
-        
         let ligacao = UIAlertAction(title: "Ligar", style: .default) { acao in
-            completion(.ligacao)
+            LigacaoTelefonica().fazLigacao(alunoSelecionado)
         }
         
         let waze = UIAlertAction(title: "Abrir no Waze", style: .default) { acao in
-            completion(.waze)
+            Localizacao().localizAlunoNoWaze(alunoSelecionado)
         }
         
         let mapa = UIAlertAction(title: "Mostrar no Mapa", style: .default) { acao in
-            completion(.mapa)
+            let mapa = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mapa") as! MapaViewController
+            mapa.aluno = alunoSelecionado
+            navigation.pushViewController(mapa, animated: true)
         }
         
         let abrirPaginaWeb = UIAlertAction(title: "Abrir pagina", style: .default) { acao in
-            completion(.abrirPaginaWeb)
+            Safari().abrePaginaWeb(alunoSelecionado, controller: viewController)
         }
+        
+        let cancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         
         menu.addAction(sms)
         menu.addAction(ligacao)

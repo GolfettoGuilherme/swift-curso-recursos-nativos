@@ -72,5 +72,25 @@ Depois atribuindo o clique do atalho a uma View do aplicativo
 
 Por fim, aprendemos a definir um icone bonito para a aplicação para não ficar naquele genérico da apple.
 
+
+## Sincronização via Web Services
+
+Adicionei nesse projeto uma pasta de nome `server` onde existe uma aplicação Java para servir de Web Service pro projeto e gerenciar os alunos
+
+### para executar o servidor
+
+basta abrir a pasta `server` e rodar o comando: `java -jar server.jar`
+
+## Alamofire
+
+Aqui aprendemos a instalar o Alamofire para lidar com as requisições HTTP que o aplicativo precisa fazer para o servidor.
+Aprendemos os metodos: GET, POST, PUT e DELETE
+
+## Sincronização Offline e Online
+
+Caso durante algum momento o app não consiga se conectar ao servidor (seja por estar longe de um WIFI ou o servidor estar desligado), mantemos os alunos salvos pelo CoreData e sincronizamos com o servidor as mudanças sempre que o app volta a estar em evidencia no dispositivo, método: `applicationDidBecomeActive`
+
+
+
 é nois
 Fechou Balada
