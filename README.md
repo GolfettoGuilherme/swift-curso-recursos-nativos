@@ -1,4 +1,4 @@
-<img src="imagens/logo.png" align="center" height="150" width="175" alt="Agenda Alura" />
+<img src="https://github.com/GolfettoGuilherme/swift-curso-recursos-nativos/blob/main/images/logo.png" align="center" height="150" width="175" alt="Agenda Alura" />
 <h1 align="center"> Agenda Alura ⚡️ </h1>
 
 <p>Esse foi um projeto exemplo de estudo para a Formação iOS da Alura</p>
