@@ -1,8 +1,9 @@
-<h1 align="center">
-    <img src="Agenda/Assets.xcassets/76.png" height="150" width="175" alt="Agenda Alura" />
-    Agenda Alura ⚡️
-</h1>
-Nesse curso estudei:
+<img src="imagens/logo.png" align="center" height="150" width="175" alt="Agenda Alura" />
+<h1 align="center"> Agenda Alura ⚡️ </h1>
+
+<p>Esse foi um projeto exemplo de estudo para a Formação iOS da Alura</p>
+
+<p>Nesse curso estudei:</p>
 
 ## Como utilizar a câmera/biblioteca de fotos do iOS 📸
 
